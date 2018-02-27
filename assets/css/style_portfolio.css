@@ -62,7 +62,7 @@ main {
     /* teal box */
     background-color: #4aaaa5;
     width:200px;
-    padding: 20px 0;
+    padding: 1em 0;
 
     /* text formatting */
     color: #ffffff; 
@@ -124,4 +124,89 @@ aside {
     height: 70px;
     width: 70px;
     padding: 4px 4px 3px 3px;
+}
+
+/* ------------------------ */
+/* -----media queries------ */
+/* ------------------------ */
+
+@media screen and (max-width: 980px) {
+
+.content-area {
+    -background-color: blue;
+    -background-image: none; 
+}
+
+.content-wrapper{
+    width: 700px;
+}
+
+main {
+    width: 55%;
+}
+
+.portfolio-wrapper{
+    padding: 0;
+}
+
+.portfolio-icon{
+    width:100%;
+    padding: 0;
+    margin: 5% 0;
+}
+
+.portfolio-img{
+    max-width: 100%;
+    width:100%;   
+}
+
+.portfolio-label{
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.content-area {
+    -background-color: rgb(114, 201, 92);
+    -background-image: none; 
+}    
+
+.content-wrapper{
+    flex-flow: column nowrap;
+    width: auto;
+}
+
+main {
+    width: 90vw;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+aside {
+    width: 90vw;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: 5%;
+}
+
+.aside-link-wrapper{
+    justify-content: flex-start;
+}
+
+.portfolio-icon{
+    width:45%;
+    padding: 0;
+    margin: 5% 0;
+}
+
+}
+
+@media screen and (max-width: 640px){
+
+.portfolio-icon{
+    width: 100%;
+}
+
 }

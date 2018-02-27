@@ -48,6 +48,9 @@ main {
 .profile-pic {
     float: left;
     padding: 5px 20px 0 0;
+    max-width: 150px;
+    width: auto;
+    height:auto;
 }
 
 .main-text {
@@ -102,4 +105,74 @@ aside {
     height: 70px;
     width: 70px;
     padding: 4px 4px 3px 3px;
+}
+
+/* ------------------------ */
+/* -----media queries------ */
+/* ------------------------ */
+
+@media screen and (max-width: 980px) {
+
+.content-area {
+    -background-color: blue;
+    -background-image: none; 
+}
+
+.content-wrapper{
+    width: 700px;
+}
+
+main {
+    width: 55%;
+}
+
+.profile-pic{
+    max-width: none;
+    width:100%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.content-area {
+    -background-color: rgb(114, 201, 92);
+    -background-image: none; 
+}    
+
+.content-wrapper{
+    flex-flow: column nowrap;
+    width: auto;
+}
+
+main {
+    width: 90vw;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+.profile-pic{
+    max-width: 50%;
+}
+
+aside {
+    width: 90vw;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: 5%;
+}
+
+.aside-link-wrapper{
+    justify-content: flex-start;
+}
+
+}
+
+@media screen and (max-width: 640px){
+
+.profile-pic{
+    max-width: 100%;
+    width: 100%;
+}
+
 }
